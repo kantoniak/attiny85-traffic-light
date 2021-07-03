@@ -1,0 +1,6 @@
+# IDEs
+.pio
+.vscode
+
+# Local overrides
+platformio-local.ini
