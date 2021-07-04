@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <avr/sleep.h>
 
 #define LED 1
 #define LED_TIME 2048
@@ -11,7 +12,27 @@ void handleInterrupt() {
   flag = true;
 }
 
+void initialLedSequence() {
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
+  delay(100);
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
+  delay(100);
+  digitalWrite(LED, HIGH);
+  delay(200);
+  digitalWrite(LED, LOW);
+}
+
 void setup() {
+  // Sleep setup
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  noInterrupts();
+  sleep_enable();
+  interrupts();
+
   // Output LED
   ledTimer = 0;
   pinMode(LED, OUTPUT);
@@ -19,8 +40,10 @@ void setup() {
 
   // Button interrupt
   flag = false;
-  attachInterrupt(0, handleInterrupt, CHANGE);
+  pinMode(2, INPUT);
+  attachInterrupt(0, handleInterrupt, LOW);
 
+  initialLedSequence();
   lastTime = millis();
 }
 
@@ -38,6 +61,9 @@ void loop() {
   if (delta > ledTimer) {
     ledTimer = 0;
     digitalWrite(LED, LOW);
+    delay(100);
+    interrupts();
+    sleep_cpu();
   } else {
     ledTimer -= delta;
   }
