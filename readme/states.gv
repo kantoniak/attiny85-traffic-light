@@ -1,0 +1,46 @@
+digraph {
+  node [color="black" fixedsize=true fontsize="12" fontname="monospace" shape="circle" width=1.1];
+  edge [fontname="monospace" fontsize="10" fontcolor="darkorange"];
+  Input [shape="point" width=0.2]
+  Input -> OFF
+  GO -> GO_END -> STOP -> STOP_END -> GO [color="red"]
+  GO -> GO_END [color="orange" label="20000 ms"]
+  GO_END -> STOP [color="orange" label="3000 ms"]
+  STOP -> STOP_END [color="orange" label="20000 ms"]
+  STOP_END -> GO [color="orange" label="1000 ms"]
+  OFF -> INIT [color="blue"]
+  INIT -> STOP [color="orange" label="900 ms"]
+  INIT -> OFF [color="blue"]
+  GO -> OFF [color="blue"]
+  GO_END -> OFF [color="blue"]
+  STOP -> OFF [color="blue"]
+  STOP_END -> OFF [color="blue"]
+  GO -> SLEEP [color="gray"]
+  GO_END -> SLEEP [color="gray"]
+  STOP -> SLEEP [color="gray"]
+  STOP_END -> SLEEP [color="gray"]
+  SLEEP -> STOP [color="red"]
+
+  node [shape=plaintext fixedsize=false]
+  subgraph legend {
+    shape = "rectangle";
+    key [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0">
+      <tr><td align="left"><b>Action</b></td></tr>
+      <tr><td align="left" port="off_switch">ON/OFF switch</td></tr>
+      <tr><td align="left" port="stimeout">State time-out</td></tr>
+      <tr><td align="left" port="gtimeout">Global time-out</td></tr>
+      <tr><td align="left" port="button">Button click</td></tr>
+      </table>>]
+    key2 [label=<<table border="0" cellpadding="2" cellspacing="0" cellborder="0" width="1">
+      <tr><td>&nbsp;</td></tr>
+      <tr><td port="off_switch">&nbsp;</td></tr>
+      <tr><td port="stimeout">&nbsp;</td></tr>
+      <tr><td port="gtimeout">&nbsp;</td></tr>
+      <tr><td port="button">&nbsp;</td></tr>
+      </table>>]
+    key:off_switch:e -> key2:off_switch:w [color="blue"]
+    key:stimeout:e -> key2:stimeout:w [color="orange"]
+    key:gtimeout:e -> key2:gtimeout:w [color="gray"]
+    key:button:e -> key2:button:w [color="red"]
+  }
+}
