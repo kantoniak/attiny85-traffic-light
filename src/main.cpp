@@ -4,16 +4,17 @@
 #include "states.hpp"
 
 Automaton* automaton;
-
-volatile bool flag = false;
 volatile bool interrupt_active = false;
+volatile bool interrupt_flag = false;
+
 void handleInterrupt() {
-  flag = true;
+  interrupt_flag = true;
   detach_button_interrupt(PIN_BUTTON);
   interrupt_active = false;
 }
 
 void setup() {
+  init_sleep_mode();
   init_leds();
 
   interrupt_active = true;
@@ -23,8 +24,8 @@ void setup() {
 }
 
 void loop() {
-  if (flag) {
-    flag = false;
+  if (interrupt_flag) {
+    interrupt_flag = false;
     handle_button(*automaton, millis());
   }
 

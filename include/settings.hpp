@@ -12,6 +12,8 @@ constexpr unsigned long STOP_END_TIMEOUT = 1000;
 constexpr unsigned long GO_TIMEOUT = 20 * 1000;
 constexpr unsigned long GO_END_TIMEOUT = 3 * 1000;
 
+void init_sleep_mode();
 void init_leds();
 void attach_button_interrupt(uint8_t pin, void(*handler)(void));
 void detach_button_interrupt(uint8_t pin);
+void enter_sleep();

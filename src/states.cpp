@@ -23,7 +23,7 @@ void initialLedSequence() {
 
 Automaton* new_automaton(unsigned long current_time) {
   Automaton* automaton = new Automaton;
-  automaton->global_timeout = 0;
+  automaton->global_timeout = current_time + SLEEP_TIMEOUT;
   enter_state(*automaton, INIT, current_time);
   return automaton;
 }
@@ -63,6 +63,7 @@ void enter_state(Automaton & automaton, State state, unsigned long current_time)
       break;
     }
     case SLEEP: {
+      enter_sleep();
       break;
     }
     default: {
@@ -97,10 +98,15 @@ void leave_state(Automaton & automaton) {
 }
 
 void update_state(Automaton & automaton, unsigned long current_time) {
+
+  // Go to sleep if no activity
+  if (current_time >= automaton.global_timeout) {
+    leave_state(automaton);
+    enter_state(automaton, SLEEP, current_time);
+    return;
+  }
+
   switch (automaton.state) {
-    case INIT: {
-      break;
-    }
     case STOP: {
       if (current_time >= automaton.state_timeout) {
         leave_state(automaton);
@@ -129,9 +135,6 @@ void update_state(Automaton & automaton, unsigned long current_time) {
       }
       break;
     }
-    case SLEEP: {
-      break;
-    }
     default: {
       break;
     }
@@ -139,6 +142,8 @@ void update_state(Automaton & automaton, unsigned long current_time) {
 }
 
 void handle_button(Automaton & automaton, unsigned long current_time) {
+  automaton.global_timeout = current_time + SLEEP_TIMEOUT;
+
   switch (automaton.state) {
     case STOP: {
       leave_state(automaton);
@@ -159,6 +164,10 @@ void handle_button(Automaton & automaton, unsigned long current_time) {
       leave_state(automaton);
       enter_state(automaton, STOP, current_time);
       break;
+    }
+    case SLEEP: {
+      leave_state(automaton);
+      enter_state(automaton, STOP, current_time);
     }
     default: {
       break;
