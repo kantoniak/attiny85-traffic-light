@@ -5,11 +5,33 @@
 
 Automaton* automaton;
 
+volatile bool flag = false;
+volatile bool interrupt_active = false;
+void handleInterrupt() {
+  flag = true;
+  detach_button_interrupt(PIN_BUTTON);
+  interrupt_active = false;
+}
+
 void setup() {
   init_leds();
+
+  interrupt_active = true;
+  attach_button_interrupt(PIN_BUTTON, handleInterrupt);
+
   automaton = new_automaton(millis());
 }
 
 void loop() {
+  if (flag) {
+    flag = false;
+    handle_button(*automaton, millis());
+  }
+
+  if (!interrupt_active && digitalRead(PIN_BUTTON) == HIGH) {
+    interrupt_active = true;
+    attach_button_interrupt(PIN_BUTTON, handleInterrupt);
+  }
+
   update_state(*automaton, millis());
 }

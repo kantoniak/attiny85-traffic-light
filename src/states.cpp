@@ -71,6 +71,31 @@ void enter_state(Automaton & automaton, State state, unsigned long current_time)
   }
 }
 
+void leave_state(Automaton & automaton) {
+  switch (automaton.state) {
+    case STOP: {
+      digitalWrite(PIN_LED_RED, LOW);
+      break;
+    }
+    case STOP_END: {
+      digitalWrite(PIN_LED_RED, LOW);
+      digitalWrite(PIN_LED_YELLOW, LOW);
+      break;
+    }
+    case GO: {
+      digitalWrite(PIN_LED_GREEN, LOW);
+      break;
+    }
+    case GO_END: {
+      digitalWrite(PIN_LED_YELLOW, LOW);
+      break;
+    }
+    default: {
+      break;
+    }
+  }
+}
+
 void update_state(Automaton & automaton, unsigned long current_time) {
   switch (automaton.state) {
     case INIT: {
@@ -78,34 +103,61 @@ void update_state(Automaton & automaton, unsigned long current_time) {
     }
     case STOP: {
       if (current_time >= automaton.state_timeout) {
-        digitalWrite(PIN_LED_RED, LOW);
+        leave_state(automaton);
         enter_state(automaton, STOP_END, current_time);
       }
       break;
     }
     case STOP_END: {
       if (current_time >= automaton.state_timeout) {
-        digitalWrite(PIN_LED_RED, LOW);
-        digitalWrite(PIN_LED_YELLOW, LOW);
+        leave_state(automaton);
         enter_state(automaton, GO, current_time);
       }
       break;
     }
     case GO: {
       if (current_time >= automaton.state_timeout) {
-        digitalWrite(PIN_LED_GREEN, LOW);
+        leave_state(automaton);
         enter_state(automaton, GO_END, current_time);
       }
       break;
     }
     case GO_END: {
       if (current_time >= automaton.state_timeout) {
-        digitalWrite(PIN_LED_YELLOW, LOW);
+        leave_state(automaton);
         enter_state(automaton, STOP, current_time);
       }
       break;
     }
     case SLEEP: {
+      break;
+    }
+    default: {
+      break;
+    }
+  }
+}
+
+void handle_button(Automaton & automaton, unsigned long current_time) {
+  switch (automaton.state) {
+    case STOP: {
+      leave_state(automaton);
+      enter_state(automaton, STOP_END, current_time);
+      break;
+    }
+    case STOP_END: {
+      leave_state(automaton);
+      enter_state(automaton, GO, current_time);
+      break;
+    }
+    case GO: {
+      leave_state(automaton);
+      enter_state(automaton, GO_END, current_time);
+      break;
+    }
+    case GO_END: {
+      leave_state(automaton);
+      enter_state(automaton, STOP, current_time);
       break;
     }
     default: {

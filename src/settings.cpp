@@ -8,3 +8,12 @@ void init_leds() {
   digitalWrite(PIN_LED_YELLOW, LOW);
   digitalWrite(PIN_LED_GREEN, LOW);
 }
+
+void attach_button_interrupt(uint8_t pin, void(*handler)(void)) {
+  pinMode(pin, INPUT);
+  attachInterrupt(digitalPinToInterrupt(pin), handler, LOW);
+}
+
+void detach_button_interrupt(uint8_t pin) {
+  detachInterrupt(digitalPinToInterrupt(pin));
+}
