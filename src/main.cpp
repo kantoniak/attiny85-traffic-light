@@ -1,7 +1,9 @@
 #include <Arduino.h>
 #include <avr/sleep.h>
 
-#define LED 1
+#define LED_RED 3
+#define LED_YELLOW 1
+#define LED_GREEN 0
 #define LED_TIME 2048
 
 unsigned long lastTime;
@@ -13,17 +15,17 @@ void handleInterrupt() {
 }
 
 void initialLedSequence() {
-  digitalWrite(LED, HIGH);
+  digitalWrite(LED_RED, HIGH);
   delay(200);
-  digitalWrite(LED, LOW);
+  digitalWrite(LED_RED, LOW);
   delay(100);
-  digitalWrite(LED, HIGH);
+  digitalWrite(LED_YELLOW, HIGH);
   delay(200);
-  digitalWrite(LED, LOW);
+  digitalWrite(LED_YELLOW, LOW);
   delay(100);
-  digitalWrite(LED, HIGH);
+  digitalWrite(LED_GREEN, HIGH);
   delay(200);
-  digitalWrite(LED, LOW);
+  digitalWrite(LED_GREEN, LOW);
 }
 
 void setup() {
@@ -34,11 +36,15 @@ void setup() {
   interrupts();
 
   // Output LED
-  ledTimer = 0;
-  pinMode(LED, OUTPUT);
-  digitalWrite(LED, LOW);
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  digitalWrite(LED_RED, LOW);
+  digitalWrite(LED_YELLOW, LOW);
+  digitalWrite(LED_GREEN, LOW);
 
   // Button interrupt
+  ledTimer = 0;
   flag = false;
   pinMode(2, INPUT);
   attachInterrupt(0, handleInterrupt, LOW);
@@ -55,12 +61,14 @@ void loop() {
   if (flag) {
     flag = false;
     ledTimer = LED_TIME;
-    digitalWrite(LED, HIGH);
+    digitalWrite(LED_YELLOW, HIGH);
+    digitalWrite(LED_RED, HIGH);
   }
 
   if (delta > ledTimer) {
     ledTimer = 0;
-    digitalWrite(LED, LOW);
+    digitalWrite(LED_YELLOW, LOW);
+    digitalWrite(LED_RED, LOW);
     delay(100);
     interrupts();
     sleep_cpu();
