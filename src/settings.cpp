@@ -1,6 +1,19 @@
 #include <avr/sleep.h>
 #include "settings.hpp"
 
+#define adc_disable() (ADCSRA &= ~(1<<ADEN))
+
+void setup_power_saving() {
+  // Disable ADC
+  adc_disable();
+
+  // Set unused pins low so they don't float
+  pinMode(PIN_UNUSED_4, OUTPUT);
+  pinMode(PIN_UNUSED_5, OUTPUT);
+  digitalWrite(PIN_UNUSED_4, LOW);
+  digitalWrite(PIN_UNUSED_5, LOW);
+}
+
 void init_sleep_mode() {
   set_sleep_mode(SLEEP_MODE_PWR_DOWN);
   noInterrupts();

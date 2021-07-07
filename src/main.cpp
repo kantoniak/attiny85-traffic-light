@@ -14,6 +14,7 @@ void handleInterrupt() {
 }
 
 void setup() {
+  setup_power_saving();
   init_sleep_mode();
   init_leds();
 
