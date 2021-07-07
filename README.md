@@ -13,4 +13,11 @@ User can manually move to the next state by pressing a button (the red cycle).
 
 The light runs on a single CR2032 cell (about 220 mAh), so it should consume minimal amounts of energy. Current optimizations are:
 
-* Deep sleep after 10 minutes (see 0f1c727)
+* Deep sleep after 10 minutes (commit 0f1c727)
+* Disabled ADC (commit dee5303, [blog post](http://www.technoblogy.com/show?KX0))
+* Unused pins set to `LOW` (commit dee5303, [forum post](http://gammon.com.au/power))
+* Custom fuses settings (commit 2d93b48, [fuse calculator](https://www.engbedded.com/fusecalc/))
+  * disabled Brown-Out Detection which does some voltage comparisons
+  * 1 MHz clock speed from diving 8 MHz by 8
+
+Remember to set fuses from PlatformIO! It doesn't happen automatically during upload.
