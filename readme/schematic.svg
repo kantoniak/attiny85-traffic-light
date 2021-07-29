@@ -1,0 +1,400 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg631" width="1080" height="722.4" version="1.1" viewBox="-10 -816.7 540 361.2">
+  <g id="g1">
+    <g id="frame_lib_1">
+      <path id="gge1722" fill="none" stroke="#800" stroke-width="1" d="M206-796v-10m0 330v10m196-330v-10m0 330v10M10-600H0m510 0h10"/>
+      <g id="gge1723">
+        <text id="text15" x="1.5" y="-698" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          A
+        </text>
+      </g>
+      <g id="gge1725">
+        <text id="text18" x="511.5" y="-698" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          A
+        </text>
+      </g>
+      <g id="gge1727">
+        <text id="text21" x="108" y="-797.5" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          1
+        </text>
+      </g>
+      <g id="gge1729">
+        <text id="text24" x="108" y="-467.5" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          1
+        </text>
+      </g>
+      <g id="gge1731">
+        <text id="text27" x="304" y="-797.5" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          2
+        </text>
+      </g>
+      <g id="gge1733">
+        <text id="text30" x="304" y="-467.5" fill="#800" font-family="Verdana" font-size="7pt" text-anchor="start">
+          2
+        </text>
+      </g>
+      <path id="gge1636" fill="none" stroke="#800" stroke-width="1" d="M10-796h500v320H10z"/>
+      <path id="gge1637" fill="none" stroke="#800" stroke-width="1" d="M0-806h520v340H0z"/>
+    </g>
+    <g id="gge98de9dc9d9de9235">
+      <g id="gge393">
+        <text id="text80" x="183.773" y="-646.805" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          ATTINY85
+        </text>
+      </g>
+      <path id="gge397" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M140-645h90"/>
+      <path id="gge398" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M230-645v70"/>
+      <path id="gge399" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M230-575h-90"/>
+      <path id="gge400" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M140-575v-70"/>
+      <g id="gge401">
+        <text id="text90" x="227" y="-582" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          PB0
+        </text>
+        <text id="text92" x="236" y="-586" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          5
+        </text>
+        <circle id="circle94" cx="250" cy="-585" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path96" fill="none" stroke="#8D2323" stroke-width="1" d="M250-585h-20"/>
+      </g>
+      <g id="gge408">
+        <text id="text103" x="227" y="-592" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          PB1
+        </text>
+        <text id="text105" x="236" y="-596" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          6
+        </text>
+        <circle id="circle107" cx="250" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path109" fill="none" stroke="#8D2323" stroke-width="1" d="M250-595h-20"/>
+      </g>
+      <g id="gge415">
+        <text id="text116" x="227" y="-602" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          PB2
+        </text>
+        <text id="text118" x="236" y="-606" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          7
+        </text>
+        <circle id="circle120" cx="250" cy="-605" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path122" fill="none" stroke="#8D2323" stroke-width="1" d="M250-605h-20"/>
+      </g>
+      <g id="gge422">
+        <text id="text129" x="227" y="-612" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          PB3
+        </text>
+        <text id="text131" x="236" y="-616" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          2
+        </text>
+        <circle id="circle133" cx="250" cy="-615" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path135" fill="none" stroke="#8D2323" stroke-width="1" d="M250-615h-20"/>
+      </g>
+      <g id="gge429">
+        <text id="text142" x="227" y="-622" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          PB4
+        </text>
+        <text id="text144" x="236" y="-626" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          3
+        </text>
+        <circle id="circle146" cx="250" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path148" fill="none" stroke="#8D2323" stroke-width="1" d="M250-625h-20"/>
+      </g>
+      <g id="gge436">
+        <text id="text155" x="227" y="-632" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          NRESPB5
+        </text>
+        <text id="text157" x="236" y="-636" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          1
+        </text>
+        <circle id="circle159" cx="250" cy="-635" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path161" fill="none" stroke="#8D2323" stroke-width="1" d="M250-635h-20"/>
+      </g>
+      <g id="gge443">
+        <text id="text168" x="143" y="-632" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          VCC
+        </text>
+        <text id="text170" x="134" y="-636" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          8
+        </text>
+        <circle id="circle172" cx="120" cy="-635" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path174" fill="none" stroke="#8D2323" stroke-width="1" d="M120-635h20"/>
+      </g>
+      <g id="gge450">
+        <text id="text181" x="143" y="-582" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="start">
+          GND
+        </text>
+        <text id="text183" x="134" y="-586" fill="#8D2323" font-family="Verdana" font-size="7pt" text-anchor="end">
+          4
+        </text>
+        <circle id="circle185" cx="120" cy="-585" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path187" fill="none" stroke="#8D2323" stroke-width="1" d="M120-585h20"/>
+      </g>
+    </g>
+    <g id="gge527970169dedcad3">
+      <g id="gge676">
+        <text id="text195" x="310.156" y="-631.75" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          RED
+        </text>
+      </g>
+      <path id="gge680" fill="none" stroke="#800" stroke-width="1" d="M335-619l10-6-10-7z"/>
+      <path id="gge681" fill="red" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-633v16"/>
+      <path id="gge682" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-635l4-4"/>
+      <path id="gge683" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M349-631l4-4"/>
+      <path id="gge684" fill="#FF3" stroke="#800" stroke-width="1" d="M352-642l-4 2 2 2z"/>
+      <path id="gge685" fill="#FF3" stroke="#800" stroke-width="1" d="M356-638l-4 2 2 2z"/>
+      <g id="gge686">
+        <circle id="circle211" cx="320" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path213" fill="none" stroke="#800" stroke-width="1" d="M320-625h15"/>
+      </g>
+      <g id="gge693">
+        <circle id="circle224" cx="360" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path226" fill="none" stroke="#800" stroke-width="1" d="M360-625h-15"/>
+      </g>
+    </g>
+    <g id="gge9ad246e7f7e0caa0">
+      <g id="gge702">
+        <text id="text234" x="290.664" y="-601.75" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          YELLOW
+        </text>
+      </g>
+      <path id="gge706" fill="none" stroke="#800" stroke-width="1" d="M335-589l10-6-10-7z"/>
+      <path id="gge707" fill="red" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-603v16"/>
+      <path id="gge708" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-605l4-4"/>
+      <path id="gge709" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M349-601l4-4"/>
+      <path id="gge710" fill="#FF3" stroke="#800" stroke-width="1" d="M352-612l-4 2 2 2z"/>
+      <path id="gge711" fill="#FF3" stroke="#800" stroke-width="1" d="M356-608l-4 2 2 2z"/>
+      <g id="gge712">
+        <circle id="circle250" cx="320" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path252" fill="none" stroke="#800" stroke-width="1" d="M320-595h15"/>
+      </g>
+      <g id="gge719">
+        <circle id="circle263" cx="360" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path265" fill="none" stroke="#800" stroke-width="1" d="M360-595h-15"/>
+      </g>
+    </g>
+    <g id="gge7d267c2a17c7f990">
+      <g id="gge728">
+        <text id="text273" x="298.414" y="-571.75" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          GREEN
+        </text>
+      </g>
+      <path id="gge732" fill="none" stroke="#800" stroke-width="1" d="M335-559l10-6-10-7z"/>
+      <path id="gge733" fill="red" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-573v16"/>
+      <path id="gge734" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M345-575l4-4"/>
+      <path id="gge735" fill="#800" stroke="#800" stroke-linecap="round" stroke-width="1" d="M349-571l4-4"/>
+      <path id="gge736" fill="#FF3" stroke="#800" stroke-width="1" d="M352-582l-4 2 2 2z"/>
+      <path id="gge737" fill="#FF3" stroke="#800" stroke-width="1" d="M356-578l-4 2 2 2z"/>
+      <g id="gge738">
+        <circle id="circle289" cx="320" cy="-565" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path291" fill="none" stroke="#800" stroke-width="1" d="M320-565h15"/>
+      </g>
+      <g id="gge745">
+        <circle id="circle302" cx="360" cy="-565" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path304" fill="none" stroke="#800" stroke-width="1" d="M360-565h-15"/>
+      </g>
+    </g>
+    <g id="ggeccd3b8e4aaaad7dc">
+      <g id="gge804">
+        <text id="text312" x="373.828" y="-603" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          1k
+        </text>
+      </g>
+      <path id="gge808" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M395-595l-3 5"/>
+      <path id="gge809" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M387-600l-5 10"/>
+      <path id="gge810" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M392-590l-5-10"/>
+      <g id="gge811">
+        <circle id="circle325" cx="400" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path327" fill="none" stroke="#800" stroke-width="1" d="M400-595h-5"/>
+      </g>
+      <path id="gge818" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M373-590l-5-10"/>
+      <path id="gge819" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M382-590l-4-10"/>
+      <path id="gge820" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M378-600l-5 10"/>
+      <path id="gge821" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M368-600l-3 5"/>
+      <g id="gge822">
+        <circle id="circle342" cx="360" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path344" fill="none" stroke="#800" stroke-width="1" d="M360-595h5"/>
+      </g>
+    </g>
+    <g id="gge14894b1b5b7b5f53">
+      <g id="gge831">
+        <text id="text352" x="373.828" y="-633" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          1k
+        </text>
+      </g>
+      <path id="gge835" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M395-625l-3 5"/>
+      <path id="gge836" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M387-630l-5 10"/>
+      <path id="gge837" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M392-620l-5-10"/>
+      <g id="gge838">
+        <circle id="circle365" cx="400" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path367" fill="none" stroke="#800" stroke-width="1" d="M400-625h-5"/>
+      </g>
+      <path id="gge845" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M373-620l-5-10"/>
+      <path id="gge846" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M382-620l-4-10"/>
+      <path id="gge847" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M378-630l-5 10"/>
+      <path id="gge848" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M368-630l-3 5"/>
+      <g id="gge849">
+        <circle id="circle382" cx="360" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path384" fill="none" stroke="#800" stroke-width="1" d="M360-625h5"/>
+      </g>
+    </g>
+    <g id="gge0da2bfaf9837875a">
+      <g id="gge858">
+        <text id="text392" x="373.828" y="-573" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          330
+        </text>
+      </g>
+      <path id="gge862" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M395-565l-3 5"/>
+      <path id="gge863" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M387-570l-5 10"/>
+      <path id="gge864" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M392-560l-5-10"/>
+      <g id="gge865">
+        <circle id="circle405" cx="400" cy="-565" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path407" fill="none" stroke="#800" stroke-width="1" d="M400-565h-5"/>
+      </g>
+      <path id="gge872" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M373-560l-5-10"/>
+      <path id="gge873" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M382-560l-4-10"/>
+      <path id="gge874" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M378-570l-5 10"/>
+      <path id="gge875" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M368-570l-3 5"/>
+      <g id="gge876">
+        <circle id="circle422" cx="360" cy="-565" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path424" fill="none" stroke="#800" stroke-width="1" d="M360-565h5"/>
+      </g>
+    </g>
+    <g id="gge837e66bf723ac05c">
+      <g id="gge885">
+        <text id="text432" x="277" y="-672.672" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          1k
+        </text>
+      </g>
+      <g id="gge887">
+        <text id="text435" x="277.008" y="-681.75" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          R4
+        </text>
+      </g>
+      <path id="gge889" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M270-700l5 3"/>
+      <path id="gge890" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M265-692l10 5"/>
+      <path id="gge891" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M275-697l-10 5"/>
+      <g id="gge892">
+        <circle id="circle445" cx="270" cy="-705" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path447" fill="none" stroke="#800" stroke-width="1" d="M270-705v5"/>
+      </g>
+      <path id="gge899" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M275-678l-10 5"/>
+      <path id="gge900" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M275-687l-10 4"/>
+      <path id="gge901" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M265-683l10 5"/>
+      <path id="gge902" fill="none" stroke="#A00000" stroke-linecap="round" stroke-width="1" d="M265-673l5 3"/>
+      <g id="gge903">
+        <circle id="circle462" cx="270" cy="-665" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path464" fill="none" stroke="#800" stroke-width="1" d="M270-665v-5"/>
+      </g>
+    </g>
+    <g id="ggefd760011b7359592">
+      <g id="gge937">
+        <text id="text472" x="330.672" y="-666.773" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          BTN
+        </text>
+      </g>
+      <circle id="gge941" cx="350" cy="-655" r="2" fill="none" stroke="#800" stroke-width="1"/>
+      <circle id="gge942" cx="330" cy="-655" r="2" fill="none" stroke="#800" stroke-width="1"/>
+      <g id="gge943">
+        <text id="text482" x="326" y="-656" fill="#000" font-family="Verdana" font-size="7pt" text-anchor="end">
+          1
+        </text>
+        <circle id="circle484" cx="315" cy="-655" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path486" fill="none" stroke="#800" stroke-width="1" d="M315-655h13"/>
+      </g>
+      <g id="gge950">
+        <text id="text495" x="355" y="-656" fill="#000" font-family="Verdana" font-size="7pt" text-anchor="start">
+          2
+        </text>
+        <circle id="circle497" cx="365" cy="-655" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path499" fill="none" stroke="#800" stroke-width="1" d="M365-655h-13"/>
+      </g>
+      <path id="gge957" fill="none" stroke="#800" stroke-linecap="round" stroke-width="1" d="M330-660h20v-1h-7v-2h-6v2h-7v1"/>
+    </g>
+    <g id="gge981">
+      <circle id="circle508" cx="120" cy="-585" r="2" fill="none" stroke="none" class="pindot"/>
+      <path id="gge985" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M110-585h10"/>
+      <path id="gge986" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M110-594v18"/>
+      <path id="gge987" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M108-591v12"/>
+      <path id="gge988" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M106-588v6"/>
+      <path id="gge989" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M104-586v2"/>
+    </g>
+    <g id="gge1028">
+      <circle id="circle519" cx="80" cy="-645" r="2" fill="none" stroke="none" class="pindot"/>
+      <g id="gge1030">
+        <text id="text521" x="52.438" y="-641" fill="#000" font-family="Times New Roman" font-size="12" text-anchor="start">
+          6V
+        </text>
+      </g>
+      <path id="gge1032" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M70-645h10"/>
+      <path id="gge1033" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M70-640v-10"/>
+    </g>
+    <path id="gge1049" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M250-595h70"/>
+    <path id="gge1054" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M250-605h20v-50h45"/>
+    <path id="gge1058" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M250-585h30v20h40"/>
+    <path id="gge1059" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M250-615h30v-10h40"/>
+    <path id="gge1060" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M400-625h10v60h-10"/>
+    <path id="gge1061" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M400-595h10"/>
+    <g id="gge1064">
+      <circle id="circle533" cx="420" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+      <path id="gge1068" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M430-595h-10"/>
+      <path id="gge1069" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M430-586v-18"/>
+      <path id="gge1070" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M432-589v-12"/>
+      <path id="gge1071" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M434-592v-6"/>
+      <path id="gge1072" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M436-594v-2"/>
+    </g>
+    <path id="gge1082" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M420-595h-10"/>
+    <path id="gge1083" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M365-655h45v30"/>
+    <path id="gge1087" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M270-665v10"/>
+    <g id="gge1091">
+      <circle id="circle547" cx="270" cy="-705" r="2" fill="none" stroke="none" class="pindot"/>
+      <g id="gge1093">
+        <text id="text549" x="262.563" y="-718.164" fill="#000" font-family="Times New Roman" font-size="12" text-anchor="start">
+          6V
+        </text>
+      </g>
+      <path id="gge1095" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M270-715v10"/>
+      <path id="gge1096" fill="transparent" stroke="#000" stroke-linecap="round" stroke-width="1" d="M265-715h10"/>
+    </g>
+    <g id="gge656d8859af265131">
+      <g id="gge1533">
+        <text id="text555" x="94.297" y="-660" fill="navy" font-family="Arial" font-size="7pt" text-anchor="start">
+          ON-OFF
+        </text>
+      </g>
+      <path id="gge1537" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M95-645l10-5"/>
+      <path id="gge1538" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M105-635h2"/>
+      <path id="gge1539" fill="none" stroke="#8D2323" stroke-linecap="round" stroke-width="1" d="M105-655h2"/>
+      <circle id="gge1540" cx="105" cy="-655" r="1" fill="none" stroke="#8D2323" stroke-width="1"/>
+      <circle id="gge1541" cx="105" cy="-635" r="1" fill="none" stroke="#8D2323" stroke-width="1"/>
+      <circle id="gge1542" cx="95" cy="-645" r="1" fill="none" stroke="#8D2323" stroke-width="1"/>
+      <g id="gge1543">
+        <circle id="circle571" cx="85" cy="-645" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path573" fill="none" stroke="#8D2323" stroke-width="1" d="M85-645h10"/>
+      </g>
+      <g id="gge1550">
+        <circle id="circle584" cx="115" cy="-635" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path586" fill="none" stroke="#8D2323" stroke-width="1" d="M115-635h-10"/>
+      </g>
+      <g id="gge1557">
+        <circle id="circle597" cx="115" cy="-655" r="2" fill="none" stroke="none" class="pindot"/>
+        <path id="path599" fill="none" stroke="#8D2323" stroke-width="1" d="M115-655h-10"/>
+      </g>
+    </g>
+    <path id="gge1603" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M80-645h5"/>
+    <path id="gge1605" fill="none" stroke="#080" stroke-linecap="round" stroke-width="1" d="M115-635h5"/>
+    <g id="gge1735">
+      <path id="path609" stroke="#3c3" stroke-width="1" d="M246-639l8 8m0-8l-8 8" shape-rendering="auto"/>
+    </g>
+    <g id="gge1737">
+      <path id="path612" stroke="#3c3" stroke-width="1" d="M246-629l8 8m0-8l-8 8" shape-rendering="auto"/>
+    </g>
+    <g id="gge1062">
+      <circle id="circle615" cx="410" cy="-595" r="2" fill="none" stroke="none" class="pindot"/>
+      <circle id="circle617" cx="410" cy="-595" r="2.5" fill="#C00" stroke-width="1"/>
+    </g>
+    <g id="gge1084">
+      <circle id="circle620" cx="410" cy="-625" r="2" fill="none" stroke="none" class="pindot"/>
+      <circle id="circle622" cx="410" cy="-625" r="2.5" fill="#C00" stroke-width="1"/>
+    </g>
+    <g id="gge1088">
+      <circle id="circle625" cx="270" cy="-655" r="2" fill="none" stroke="none" class="pindot"/>
+      <circle id="circle627" cx="270" cy="-655" r="2.5" fill="#C00" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
